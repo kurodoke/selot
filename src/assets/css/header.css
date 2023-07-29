@@ -1,0 +1,11 @@
+.hero-title {
+    font-family: "Playfair Display", serif;
+    margin-bottom: 0;
+    color: var(--main-white);
+}
+
+.subhero-title {
+    margin: 2vh 0 0 0;
+    font-size: 16pt;
+    color: var(--main-grey);
+}

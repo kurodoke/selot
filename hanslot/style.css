@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', Sans-Serif;
+}
+body {
+  background-color: rgb(7, 1, 29);
+  color: white;
+}
+
+header .logo img {
+  max-width: 70px;
+  display: flex;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 100px;
+  z-index: 100;
+}
+.btn {
+  display: flex;
+  text-decoration: none;
+}
+
+nav {
+  border-bottom: 3px solid white;
+  padding-bottom: 5px;
+}
+nav h1 {
+  color: #7325fa;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+nav h2 {
+  color: #ffdeb9;
+  font-weight: bold;
+}
+
+/* nav .btn {
+  background-color: #051ab9;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+} */
+
+.head-content .cardakun {
+  background-color: #ffffff30;
+  height: 40px;
+  padding-top: 10px;
+}
+
+.blink-border {
+  border: 3px solid;
+  border-radius: 20px;
+  animation: blink 1.5s;
+  animation-iteration-count: infinite;
+  display: flex;
+
+  height: 40px;
+  padding-bottom: 40px;
+}
+
+@keyframes blink {
+  50% {
+    border-color: #051ab9;
+  }
+}
+
+.blink-border .btn {
+  height: 35px;
+  color: white;
+  padding-bottom: 35px;
+  padding-top: px;
+}
+
+.blink-border:active {
+  color: #051ab9;
+}
+
+.table td {
+  background-color: black;
+  color: white;
+}
+
+#slot img {
+  width: 150px;
+}
+
+#slot p {
+  font-size: 11px;
+}
+
+#slot .card-slot {
+  background-color: #ffffff30;
+  width: 180px;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 5px;
+  padding-top: 7px;
+}
+
+#slot .col {
+  margin-bottom: 30px;
+}
+
+#about h5 {
+  color: #051ab9;
+  text-align: center;
+}
+
+footer {
+  margin-bottom: 120px;
+}
+
+footer p a {
+  color: #fe6244;
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: #071952;
+  border-top: 2px solid #fc2947;
+  border-bottom: 1px solid #fc2947;
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar .text-int {
+  color: #fc2947;
+}
+.navbar .fa-user {
+  color: #fc2947;
+  font-size: 30px;
+}
+
+.bouncing-arrow {
+  animation: 2s ease 0s normal none infinite running bounce;
+
+  width: 60px;
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.bounce {
+  animation-name: bounce;
+}
+
+.nav-link:active {
+  color: #fc2947;
+}

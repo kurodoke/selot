@@ -1,0 +1,42 @@
+.content-section {
+    padding-top: 15vh;
+    display: flex;
+    justify-content: center;
+}
+
+.slot {
+    display: grid;
+    grid-template-columns: 13vw 13vw 13vw 13vw 13vw;
+    row-gap: 10px;
+    gap: 2vw;
+}
+
+.slot-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: aqua;
+}
+
+.slot-item a {
+    font-size: 12pt;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: var(--main-black);
+}
+
+.slot-item a {
+    transition: color 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.slot-item a p {
+    margin: 0 0 1vh 0;
+}
+
+.slot-item a:hover {
+    color: var(--main-grey);
+}
+
+.slot-item img {
+    width: 13vw;
+}
