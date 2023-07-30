@@ -1,0 +1,22 @@
+#root {
+    overflow: hidden;
+}
+
+.comingsoon-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--main-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.comingsoon-container h1 {
+    color: var(--main-white);
+}
+
+.comingsoon-container h3 {
+    color: var(--main-white);
+}

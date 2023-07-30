@@ -1,40 +1,30 @@
-// /*TO DO:
-// 1.container selot
-// 2.scrape session web
-// 3.rengkai session => url
-// 4. fetch container
-//  */
+import { useParams } from "react-router-dom";
+import "../../assets/css/slot.css";
+import {
+    FaShoppingCart,
+    FaRegBookmark,
+    FaStar,
+    FaFireAlt,
+} from "react-icons/fa";
 
-// import "../../assets/css/slot.css";
-// import {
-//     FaShoppingCart,
-//     FaRegBookmark,
-//     FaStar,
-//     FaFireAlt,
-// } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { LocalURL } from "../../util/urlconf";
 
-// export default function Slot(slot) {
-//     return (
-//         <div className='slotlist'>
-//             <div key={slotid} className='slotCard'>
-//                 <img src='slot.image' alt='slot-img' className='slotImage' />
-//                 <FashoppingCard className={"slotcard__cart"} />
-//                 <FaRegBookmark className={"slotcard__depo"} />
-//                 <FaFireAlt className={"slotcard__withdraw"} />
-//                 <div className='slotcard__content'>
-//                     <h3 className='productName'>{slot.name}</h3>
-//                     <div className='displayStack__1'>
-//                         <div className='slotPrice'>${slot.price}</div>
-//                     </div>
-//                     <div className='displayStack__2'>
-//                         <div className='productRating'>
-//                             {[...Array(props.rating)].map((index) => (
-//                                 <FaStar id={index + 1} key={index} />
-//                             ))}
-//                         </div>
-//                     </div>
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// }
+export default function Slot(props) {
+    const { gameName } = useParams();
+
+    return (
+        <div className='slot-frame'>
+            <Link style={{ color: "var(--main-white)" }} to={LocalURL}>
+                <div className='slot-back'>
+                    <h4>Go Back Home</h4>
+                </div>
+            </Link>
+            <iframe
+                src={`https://demogamesfree-asia.pragmaticplay.net/gs2c/openGame.do?lang=id&cur=IDR&gameSymbol=${gameName}&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99`}
+                frameBorder='0'
+                className='fullscreen'
+            ></iframe>
+        </div>
+    );
+}

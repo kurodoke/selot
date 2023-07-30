@@ -1,0 +1,31 @@
+.slot-frame {
+    overflow: hidden;
+}
+
+.slot-back h4 {
+    margin: 0;
+    color: var(--main-black);
+}
+
+.slot-back {
+    background-color: aqua;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    transition: all 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.slot-back:hover {
+    background-color: var(--main-black);
+}
+
+.slot-back:hover h4 {
+    color: var(--main-white);
+}
+
+iframe {
+    overflow: hidden;
+    margin: 0;
+    margin-top: 5vh;
+    width: 85vw;
+    height: 85vh;
+}
