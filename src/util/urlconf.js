@@ -1,1 +1,1 @@
-export const LocalURL = "http://192.168.18.80:5173/";
+export const LocalURL = "https://selot.vercel.app/";
