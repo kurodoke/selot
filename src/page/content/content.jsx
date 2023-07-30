@@ -24,7 +24,7 @@ export default function Content() {
             <div className='content-section'>
                 <div id='slot'>
                     <div className='slot-item'>
-                        <Link to={LocalURL + "slot/" + "v20olympgate"}>
+                        <Link to={LocalURL + "slot/" + "vs20olympgate"}>
                             <img src={zuesImg} alt='' />
                             <p>Gates Of Olympus</p>
                         </Link>
@@ -36,31 +36,31 @@ export default function Content() {
                         </a>
                     </div>
                     <div className='slot-item'>
-                        <Link to={LocalURL + "slot/" + "v20starlight"}>
+                        <Link to={LocalURL + "slot/" + "vs20starlight"}>
                             <img src={starlightImg} alt='' />
                             <p>Starlight Princes</p>
                         </Link>
                     </div>
                     <div className='slot-item'>
-                        <Link to={LocalURL + "slot/" + "v20fruitsw"}>
+                        <Link to={LocalURL + "slot/" + "vs20fruitsw"}>
                             <img src={bonanzaImg} alt='' />
                             <p>Bonanza</p>
                         </Link>
                     </div>
                     <div className='slot-item'>
-                        <Link to={LocalURL + "slot/" + "v20sbxmas"}>
+                        <Link to={LocalURL + "slot/" + "vs20sbxmas"}>
                             <img src={bonanzaxmasImg} alt='' />
                             <p>Bonanza Xmas</p>
                         </Link>
                     </div>
                     <div className='slot-item'>
-                        <Link to={LocalURL + "slot/" + "v20starlight"}>
+                        <Link to={LocalURL + "slot/" + "vs20starlight"}>
                             <img src={princesImg} alt='' />
                             <p>Princess</p>
                         </Link>
                     </div>
                     <div className='slot-item'>
-                        <Link to={LocalURL + "slot/" + "v20gatotgates"}>
+                        <Link to={LocalURL + "slot/" + "vs20gatotgates"}>
                             <img src={gatotImg} alt='' />
                             <p>Gatot</p>
                         </Link>
